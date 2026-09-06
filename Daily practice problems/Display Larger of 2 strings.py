@@ -17,8 +17,12 @@ def w0f(x,y):
     print("Both are equal strings!")
 
 def w1f(x,y):
-  c=max(x,y)
-  print("Larger String:",c)
+  if len(x) == len(y):
+    print("Both are equal strings (by length)!")
+  elif len(x) > len(y):
+    print("Larger string:",x)
+  else:
+    print("Larger string:",y)
 
 if z==0:
   w0f(x,y)

@@ -18,11 +18,10 @@ def w0f(x,y):
 
 def w1f(x,y):
   if len(x) == len(y):
-    print("Both are equal strings (by length)!")
-  elif len(x) > len(y):
-    print("Larger string:",x)
+    print("Both strings have equal length")
   else:
-    print("Larger string:",y)
+    c = max(x, y, key=len) #key=len if missing compares strings lexicographically
+    print("Larger String:",c)
 
 if z==0:
   w0f(x,y)
